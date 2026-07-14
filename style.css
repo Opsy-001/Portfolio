@@ -22,3 +22,59 @@ body{
     line-height:1.6;
 
 }
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#111827;
+   position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#3B82F6;
+
+}
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+.nav-links a:hover{
+
+    color:#3B82F6;
+
+}
