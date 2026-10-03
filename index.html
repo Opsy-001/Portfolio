@@ -75,7 +75,7 @@
             <div class="hero-text">
 
                 <span class="small-title">
-                    DATA AND BUSINESS INTELLIGENCE ANALYST · POWER BI & SQL
+                    DATA AND BUSINESS INTELLIGENCE ANALYST 
                 </span>
 
                 <h1>
@@ -371,7 +371,7 @@ apply and grow these skills.
     </a>
 
     <span class="award">
-        🏆 Best Presentation Award  — STC Chort 3
+        🏆 Best Presentation Award  — STC Cohort 3
     </span>
 
 </div>
@@ -467,10 +467,101 @@ apply and grow these skills.
                 </div>
 
             </div>
+            <!-- ===========================
+     SQL / PROPERTY
+============================ -->
+
+<div class="project-card healthcare">
+
+    <div class="card-accent healthcare-accent"></div>
+
+    <div class="dashboard-preview">
+
+        <div style="background:#0f172a;color:#e2e8f0;font-family:Consolas,'Courier New',monospace;font-size:13px;line-height:1.6;padding:24px;height:100%;min-height:220px;overflow:hidden;white-space:pre;"
+             role="img"
+             aria-label="Excerpt of a MySQL query using a window function">SELECT region, agent_name,
+       leased_count,
+       RANK() OVER (
+         PARTITION BY region
+         ORDER BY leased_count DESC
+       ) AS region_rank
+FROM ( ... ) t;</div>
+
+    </div>
+
+    <div class="card-content">
+
+        <div class="card-top">
+
+            <span class="industry healthcare-pill">
+                SQL & Analytics
+            </span>
+
+            <span class="status live">
+                ● Published
+            </span>
+
+        </div>
+
+        <h3>
+            SQL Analysis —
+            Lagos Property Listings
+        </h3>
+
+        <p>
+            Cleaned and analyzed a three-table relational property dataset in MySQL —
+            standardizing area names, removing duplicate records, and answering 10
+            business questions on rent, days-to-lease, agent performance, and
+            inquiry-channel conversion. Built on synthetic data.
+        </p>
+
+        <div class="metrics">
+
+            <div>
+                <h4>600</h4>
+                <span>Listings</span>
+            </div>
+
+            <div>
+                <h4>2,101</h4>
+                <span>Inquiries</span>
+            </div>
+
+            <div>
+                <h4>10</h4>
+                <span>Queries</span>
+            </div>
+
+            <div>
+                <h4>9</h4>
+                <span>Duplicates Removed</span>
+            </div>
+
+        </div>
+
+        <div class="project-tools">
+            <span>MySQL</span>
+            <span>CTEs</span>
+            <span>Window Functions</span>
+            <span>Joins</span>
+        </div>
+
+        <div class="card-footer">
+
+            <a href="https://github.com/Opsy-001/mysql-property-analysis"
+               target="_blank">
+                View on GitHub →
+            </a>
+
+            <span class="award">
+                Self-directed project
+            </span>
 
         </div>
 
     </div>
+
+</div>
 
 </section>
 
