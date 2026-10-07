@@ -689,10 +689,11 @@ GRID
 
 .projects-grid{
     display:flex;
-    flex-wrap:wrap;
-    gap:24px;
+    flex-wrap:nowrap;
+    gap:20px;
     justify-content:center;
-    max-width:1000px;
+    align-items:stretch;
+    max-width:1250px;
     margin:0 auto;
 }
 
@@ -708,8 +709,8 @@ CARD
     transition:.35s ease;
     display:flex;
     flex-direction:column;
-    width:450px;
-    flex:0 0 auto;
+    flex:1 1 0;
+    min-width:0;
 }
 
 .project-card:hover{
@@ -738,7 +739,7 @@ DASHBOARD
 ==================================================*/
 
 .dashboard-preview{
-    height:150px;
+    height:110px;
     overflow:hidden;
     background:#0F172A;
 }
@@ -768,14 +769,17 @@ CONTENT
 ==================================================*/
 
 .card-content{
-    padding:18px;
+    padding:14px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
 }
 
 .card-top{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 /*==================================================
@@ -818,16 +822,16 @@ TEXT
 .card-content h3{
     color:#fff;
     font-family:'Poppins',sans-serif;
-    font-size:1.15rem;
+    font-size:1.05rem;
     line-height:1.3;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .card-content p{
     color:#CBD5E1;
     line-height:1.6;
-    font-size:.85rem;
-    margin-bottom:16px;
+    font-size:.8rem;
+    margin-bottom:12px;
 }
 
 /*==================================================
@@ -837,14 +841,14 @@ METRICS
 .metrics{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:8px;
-    margin-bottom:16px;
+    gap:6px;
+    margin-bottom:12px;
 }
 
 .metrics div{
     background:#1E293B;
     border-radius:10px;
-    padding:12px;
+    padding:8px;
     text-align:center;
 }
 
@@ -867,7 +871,7 @@ TOOLS
     display:flex;
     flex-wrap:wrap;
     gap:6px;
-    margin-bottom:16px;
+    margin-bottom:12px;
 }
 
 .project-tools span{
@@ -886,8 +890,11 @@ FOOTER
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:auto;
     border-top:1px solid rgba(255,255,255,.08);
-    padding-top:14px;
+    padding-top:10px;
 }
 
 .card-footer a{
